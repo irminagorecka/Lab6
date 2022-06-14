@@ -11,7 +11,7 @@ public class TestTextCopyEncoding {
     System.out.println("Domyślne kodowanie: "+ Charset.defaultCharset().displayName());
     long startTime= Instant.now().toEpochMilli();
 
-    try{ //try zawiera kod kopiowania z url
+    try{
         in=new BufferedReader(new FileReader("dzieweczki.txt"));
         out=new BufferedWriter(new FileWriter("dzieweczki_java.txt"));
         int c;
